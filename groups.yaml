@@ -1,0 +1,15 @@
+---
+odd_group:
+    username: "odd"
+    password: "oddpass"
+    data:
+        ntp_server: "8.8.8.8"
+    
+even_group:
+    username: "even"
+    password: "evenpass"
+    data:
+        ntp_server: "4.4.4.4"
+
+cisco_group:
+    platform: "ios"

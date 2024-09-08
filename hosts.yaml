@@ -1,0 +1,23 @@
+---
+
+router01:
+    hostname: "192.168.137.101"
+    groups:
+        - odd_group
+    data:
+        ntp_server: "1.1.1.1"
+
+router02:
+    hostname: "192.168.137.102"
+    groups:
+        - even_group
+
+router03:
+    hostname: "192.168.137.103"
+    groups:
+        - odd_group
+
+router04:
+    hostname: "192.168.137.104"
+    groups:
+        - even_group

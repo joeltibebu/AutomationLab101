@@ -1,0 +1,60 @@
+interface Port-channel3
+ no ip address
+ negotiation auto
+!
+interface Port-channel3.3
+ encapsulation dot1Q 3 native
+ ip address 102.218.1.1 255.255.255.248
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ negotiation auto
+ channel-group 3 mode active
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ negotiation auto
+ channel-group 3 mode active
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet0/0/3
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface TenGigabitEthernet0/0/4
+ description connection to internet_Link_1
+ ip address 10.153.195.74 255.255.255.248
+ negotiation auto
+!
+interface TenGigabitEthernet0/0/5
+ description connection to internet_Link_2
+ ip address 10.131.183.4 255.255.255.248
+ negotiation auto
+!
+router ospf 1
+ router-id 10.40.40.40
+ network 102.218.1.0 0.0.0.7 area 1
+ default-information originate always
+!
+router bgp 65478
+ bgp log-neighbor-changes
+ neighbor 10.131.183.2 remote-as 65108
+ neighbor 10.153.195.73 remote-as 65108
+ !
+ address-family ipv4
+  network 102.218.1.0 mask 255.255.255.248
+  network 197.156.68.16 mask 255.255.255.252
+  network 197.156.68.20 mask 255.255.255.252
+  neighbor 10.131.183.2 activate
+  neighbor 10.153.195.73 activate
+ exit-address-family
+!
+ip http server
+ip http authentication local
+ip http secure-server
+ip forward-protocol nd

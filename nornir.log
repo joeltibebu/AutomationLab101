@@ -1,0 +1,2108 @@
+2024-09-07 02:42:02,186 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:00:08,354 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:00:08,366 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:00:08,366 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.102`
+
+2024-09-07 03:00:08,366 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:00:08,366 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:02:47,573 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:02:47,577 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.102`
+
+2024-09-07 03:02:47,578 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:02:47,578 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:02:47,579 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:03:57,293 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:03:57,295 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:03:57,295 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.102`
+
+2024-09-07 03:03:57,296 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:03:57,297 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:06:49,947 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:06:49,951 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:06:49,951 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:06:49,951 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:06:49,952 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.102`
+
+2024-09-07 03:07:41,079 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:07:41,082 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:07:41,101 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:07:41,102 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:07:45,867 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-07 03:10:25,802 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:10:25,804 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:10:25,806 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:10:25,806 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:10:30,519 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-07 03:12:48,097 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2024-09-07 03:12:48,099 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:12:48,103 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:12:48,105 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:13:30,440 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:13:30,441 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:13:30,459 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:13:30,460 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:17:32,171 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:17:32,172 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:17:32,190 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:17:32,192 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:27:40,305 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:27:40,308 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:27:40,312 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:27:40,313 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:30:50,424 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:30:50,450 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:30:50,452 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 03:30:55,830 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-07 03:33:18,581 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:48:29,005 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:48:49,948 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:53:27,604 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:55:39,670 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:59:56,252 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 03:59:56,259 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-07 03:59:56,260 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-07 03:59:56,261 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.102`
+
+2024-09-07 03:59:56,263 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-07 04:01:04,842 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 04:24:56,163 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 4 hosts
+2024-09-07 04:24:56,165 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook1.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 355, in __getitem__
+    r = g.data[item]
+TypeError: string indices must be integers
+
+2024-09-07 04:24:56,166 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook1.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 355, in __getitem__
+    r = g.data[item]
+TypeError: string indices must be integers
+
+2024-09-07 04:24:56,167 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook1.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 355, in __getitem__
+    r = g.data[item]
+TypeError: string indices must be integers
+
+2024-09-07 04:24:56,167 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook1.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 355, in __getitem__
+    r = g.data[item]
+TypeError: string indices must be integers
+
+2024-09-07 04:25:35,220 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 4 hosts
+2024-09-07 04:25:51,101 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 4 hosts
+2024-09-07 04:55:03,582 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 4 hosts
+2024-09-07 05:54:44,793 -  nornir.core -     INFO -        run() - Running task 'show_test' with args {} on 4 hosts
+2024-09-07 05:55:28,367 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show ip int br'} on 4 hosts
+2024-09-07 05:55:38,037 -  nornir.core -     INFO -        run() - Running task 'show_test' with args {} on 4 hosts
+2024-09-07 05:58:24,318 -  nornir.core -     INFO -        run() - Running task 'show_test' with args {} on 4 hosts
+2024-09-07 12:43:30,714 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'config': '1.1.1.1'} on 4 hosts
+2024-09-07 12:43:30,718 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:43:30,718 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:43:30,718 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:43:30,719 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:44:12,406 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'config': 'ntp server 1.1.1.1'} on 4 hosts
+2024-09-07 12:44:12,407 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:44:12,407 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:44:12,408 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:44:12,408 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:46:44,684 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:46:44,687 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+NameError: name 'send_config' is not defined
+
+2024-09-07 12:46:44,688 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+NameError: name 'send_config' is not defined
+
+2024-09-07 12:46:44,688 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+NameError: name 'send_config' is not defined
+
+2024-09-07 12:46:44,689 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+NameError: name 'send_config' is not defined
+
+2024-09-07 12:47:08,068 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:47:08,070 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:47:08,070 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_command, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-07 12:47:08,071 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:47:08,071 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_command, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-07 12:47:08,071 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:47:08,071 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_command, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-07 12:47:08,071 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_command() got an unexpected keyword argument 'config'
+
+2024-09-07 12:47:08,071 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_command, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-07 12:48:09,021 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:48:10,782 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2024-09-07 12:48:10,862 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2024-09-07 12:48:11,104 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2024-09-07 12:48:11,323 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook3.py", line 9, in send_command
+    task.run(task=send_config, config="ntp server = 1.1.1.1")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2024-09-07 12:48:40,256 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:53:41,689 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:54:15,587 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:54:33,924 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:54:57,181 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 12:59:29,516 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:02:43,774 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:02:50,397 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:03:16,903 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:03:22,801 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:03:24,671 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 0"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:24,751 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 0"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:24,934 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 0"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:25,101 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 0"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:51,683 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:03:53,680 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 1"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:53,683 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 1"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:53,838 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 1"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:03:54,060 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook4.py", line 9, in send_command
+    task.run(task=send_configs, configs=["router ospf 1", "network 0.0.0.0", "area 1"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-07 13:04:41,994 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:24:58,980 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:25:19,143 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:25:19,296 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:25:20,284 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:25:21,067 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:26:40,496 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:26:55,755 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:26:56,789 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:26:57,454 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:26:57,936 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:27:26,199 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-07 13:27:43,727 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:27:43,750 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:27:43,767 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-07 13:27:44,369 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook5.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-08 04:41:48,575 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 04:41:48,680 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 04:41:48,681 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 7, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:41:51,536 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+Authentication failed.
+
+2024-09-08 04:41:51,537 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 7, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:41:51,645 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+Authentication failed.
+
+2024-09-08 04:41:51,646 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 7, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:41:51,655 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+2024-09-08 04:41:51,656 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 7, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:23,552 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 04:43:23,627 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 04:43:23,628 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:26,560 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+Authentication failed.
+
+2024-09-08 04:43:26,561 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:26,574 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+Authentication failed.
+
+2024-09-08 04:43:26,575 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:26,632 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+2024-09-08 04:43:26,632 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:43,216 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 04:43:43,273 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 04:43:43,274 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:46,199 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+Authentication failed.
+
+2024-09-08 04:43:46,200 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:46,202 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+Authentication failed.
+
+2024-09-08 04:43:46,202 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:43:46,280 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+2024-09-08 04:43:46,281 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:47:48,720 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 04:47:48,774 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 04:47:48,774 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:47:51,598 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/transport.py", line 1617, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1176, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+Authentication failed.
+
+2024-09-08 04:47:51,599 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:47:51,786 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+2024-09-08 04:47:51,787 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:50:01,951 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 04:50:02,027 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 04:50:02,028 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:50:05,031 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+2024-09-08 04:50:05,032 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook7.py", line 8, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string="show interface g0/0")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 04:58:54,370 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 05:07:35,641 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
