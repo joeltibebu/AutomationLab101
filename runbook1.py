@@ -1,4 +1,6 @@
-from nornir import InitNornir
+
+
+''from nornir import InitNornir
 from nornir_scrapli.tasks import send_config
 from nornir_utils.plugins.functions import print_result
 

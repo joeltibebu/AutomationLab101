@@ -2106,3 +2106,1853 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed
 
 2024-09-08 04:58:54,370 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
 2024-09-08 05:07:35,641 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 15:25:15,211 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 15:25:25,255 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+
+2024-09-08 15:25:25,256 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 15:25:25,257 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+2024-09-08 15:25:25,257 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+2024-09-08 15:25:25,261 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook8.py", line 9, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 15:25:25,260 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook8.py", line 9, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 15:25:25,259 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook8.py", line 9, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 15:25:25,260 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook8.py", line 9, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-08 15:28:30,264 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-08 15:28:31,478 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+2024-09-08 15:28:31,479 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'test_another_cmd' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook8.py", line 9, in test_another_cmd
+    task.run(task=netmiko_send_command, command_string=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-09-09 02:23:44,335 -  nornir.core -     INFO -        run() - Running task 'test_another_cmd' with args {} on 4 hosts
+2024-09-09 02:57:36,415 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 4 hosts
+2024-09-09 03:00:21,252 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 4 hosts
+2024-09-09 03:33:20,802 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 03:33:20,806 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:20,806 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:20,808 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:20,808 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:40,863 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 03:33:40,865 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:40,866 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:40,868 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:40,869 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_get, dest=["99.99.99.99"])
+NameError: name 'napalm_get' is not defined
+
+2024-09-09 03:33:54,361 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 03:33:55,431 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.103
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 03:33:55,432 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest=["99.99.99.99"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 03:35:18,309 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 03:35:18,366 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.103
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 03:35:18,366 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest=["99.99.99.99"])
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 03:37:19,776 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 03:37:19,817 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.103
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 03:37:19,817 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 03:38:40,885 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 04:43:11,253 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 04:43:21,293 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.101
+
+2024-09-09 04:43:21,296 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:43:21,297 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.102
+
+2024-09-09 04:43:21,299 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:43:21,298 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 04:43:21,298 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.104
+
+2024-09-09 04:43:21,301 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:43:21,301 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:16,775 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 04:44:19,852 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.101
+
+2024-09-09 04:44:19,854 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:19,855 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.103
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 04:44:19,857 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:19,858 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.102
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.102
+
+2024-09-09 04:44:19,858 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:19,859 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.104
+
+2024-09-09 04:44:19,860 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:25,171 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 04:44:28,228 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.101
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.101
+
+2024-09-09 04:44:28,229 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:28,257 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.103
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 04:44:28,257 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:28,259 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.102
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.102
+
+2024-09-09 04:44:28,259 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 04:44:28,261 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.104
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.104
+
+2024-09-09 04:44:28,262 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:13:05,142 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 05:13:06,205 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.137.103
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.137.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 36, in napalm_ping
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.137.103
+
+2024-09-09 05:13:06,206 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:13:20,401 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 3387, in ping
+    output = self._send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/utilities.py", line 596, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1826, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'router02\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-09 05:13:20,402 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:13:20,733 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 3387, in ping
+    output = self._send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/utilities.py", line 596, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1826, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'router01\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-09 05:13:20,734 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:19:20,297 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 05:19:32,549 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 3387, in ping
+    output = self._send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/utilities.py", line 596, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1826, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'router02\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-09 05:19:32,551 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:19:32,653 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 3387, in ping
+    output = self._send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/utilities.py", line 596, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1826, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'router01\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-09 05:19:32,654 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:24:53,662 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 05:25:07,204 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 3387, in ping
+    output = self._send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/utilities.py", line 596, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1826, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'router01\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-09 05:25:07,205 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:25:57,677 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 05:26:09,347 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 3387, in ping
+    output = self._send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/utilities.py", line 596, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/netmiko/base_connection.py", line 1826, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'router01\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-09-09 05:26:09,348 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'ping_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook11.py", line 10, in ping_test
+    task.run(task=napalm_ping, dest="99.99.99.99")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_ping (failed)
+
+
+2024-09-09 05:29:41,820 -  nornir.core -     INFO -        run() - Running task 'ping_test' with args {} on 4 hosts
+2024-09-09 13:07:52,103 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
+2024-09-09 13:07:53,519 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:07:53,526 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:07:53,538 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:07:53,539 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:07:53,577 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:07:53,577 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:09:53,833 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
+2024-09-09 13:09:55,030 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:09:55,031 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:09:55,287 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:09:55,288 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:09:55,315 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:09:55,316 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:11:34,365 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
+2024-09-09 13:11:35,969 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 37, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-09-09 13:11:35,970 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'push_show_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_parser.py", line 15, in push_show_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-09 13:13:20,131 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
+2024-09-09 13:14:13,243 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
