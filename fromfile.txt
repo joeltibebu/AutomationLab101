@@ -1,0 +1,2 @@
+ntp server 11.11.11.11
+snmp-server community eyuel ro 

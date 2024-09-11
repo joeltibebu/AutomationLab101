@@ -3956,3 +3956,457 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
 
 2024-09-09 13:13:20,131 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
 2024-09-09 13:14:13,243 -  nornir.core -     INFO -        run() - Running task 'push_show_commands' with args {} on 4 hosts
+2024-09-10 08:33:44,806 -  nornir.core -     INFO -        run() - Running task 'commit_flash' with args {} on 4 hosts
+2024-09-10 08:33:44,808 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_interactive() got an unexpected keyword argument 'interact_event'
+
+2024-09-10 08:33:44,809 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_event=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:33:44,809 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_interactive() got an unexpected keyword argument 'interact_event'
+
+2024-09-10 08:33:44,809 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_event=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:33:44,811 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_interactive() got an unexpected keyword argument 'interact_event'
+
+2024-09-10 08:33:44,811 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_event=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:33:44,811 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_interactive() got an unexpected keyword argument 'interact_event'
+
+2024-09-10 08:33:44,811 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_event=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:35:09,020 -  nornir.core -     INFO -        run() - Running task 'commit_flash' with args {} on 4 hosts
+2024-09-10 08:35:09,026 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.101`
+
+2024-09-10 08:35:09,027 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.102`
+
+2024-09-10 08:35:09,029 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:35:09,031 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:35:09,032 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.103`
+
+2024-09-10 08:35:09,034 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:35:09,033 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 89, in open
+    raise NornirScrapliInvalidPlatform(
+nornir_scrapli.exceptions.NornirScrapliInvalidPlatform: 'platform' not provided in inventory for host `192.168.137.104`
+
+2024-09-10 08:35:09,035 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'commit_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_interactive.py", line 10, in commit_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-09-10 08:35:47,022 -  nornir.core -     INFO -        run() - Running task 'commit_flash' with args {} on 4 hosts
+2024-09-10 09:00:53,244 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-10 09:01:32,366 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_from_file.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-10 09:01:32,988 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_from_file.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-10 09:01:35,007 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_from_file.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-10 09:01:35,611 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_from_file.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="randomconfig.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-10 09:02:00,960 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-10 09:02:08,713 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_configs_from_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_configs_from_file.py", line 69, in send_configs_from_file
+    scrapli_response = scrapli_conn.send_configs_from_file(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 662, in send_configs_from_file
+    return self.send_configs(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 540, in send_configs
+    responses = super().send_commands(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 267, in send_commands
+    response = self._send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 167, in _send_command
+    raw_response, processed_response = self.channel.send_input(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 505, in send_input
+    _buf_until_input = self._read_until_input(channel_input=bytes_channel_input)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 107, in _read_until_input
+    buf += self.read()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 71, in read
+    buf = self.transport.read()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 107, in _multiprocessing_timeout
+    future = pool.submit(wrapped_func, *args, **kwargs)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+
+2024-09-10 09:02:08,714 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_from_file.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="fromfile.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-10 09:02:08,716 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_configs_from_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_configs_from_file.py", line 69, in send_configs_from_file
+    scrapli_response = scrapli_conn.send_configs_from_file(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 662, in send_configs_from_file
+    return self.send_configs(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 540, in send_configs
+    responses = super().send_commands(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 267, in send_commands
+    response = self._send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 167, in _send_command
+    raw_response, processed_response = self.channel.send_input(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 505, in send_input
+    _buf_until_input = self._read_until_input(channel_input=bytes_channel_input)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 107, in _read_until_input
+    buf += self.read()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/channel/sync_channel.py", line 71, in read
+    buf = self.transport.read()
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 107, in _multiprocessing_timeout
+    future = pool.submit(wrapped_func, *args, **kwargs)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+
+2024-09-10 09:02:08,717 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_from_file.py", line 9, in send_command
+    task.run(task=send_configs_from_file, file="fromfile.txt")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-09-10 09:02:13,476 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 4 hosts
+2024-09-10 09:10:51,607 -  nornir.core -     INFO -        run() - Running task 'rollin_rollin' with args {} on 4 hosts
+2024-09-10 09:11:26,618 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 38, in send_command
+    scrapli_response = scrapli_conn.send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 255, in send_command
+    response: Response = super().send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 203, in send_command
+    response: Response = self._send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 167, in _send_command
+    raw_response, processed_response = self.channel.send_input(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending input to device
+
+2024-09-10 09:11:26,620 - nornir.core.task -    ERROR -      start() - Host 'router01': task 'rollin_rollin' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_Rollback.py", line 8, in rollin_rollin
+    task.run(task=send_command, command="configure replace flash:eyuel force")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-10 09:11:26,706 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 38, in send_command
+    scrapli_response = scrapli_conn.send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 255, in send_command
+    response: Response = super().send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 203, in send_command
+    response: Response = self._send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 167, in _send_command
+    raw_response, processed_response = self.channel.send_input(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending input to device
+
+2024-09-10 09:11:26,707 - nornir.core.task -    ERROR -      start() - Host 'router02': task 'rollin_rollin' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_Rollback.py", line 8, in rollin_rollin
+    task.run(task=send_command, command="configure replace flash:eyuel force")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-10 09:11:27,432 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 38, in send_command
+    scrapli_response = scrapli_conn.send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 255, in send_command
+    response: Response = super().send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 203, in send_command
+    response: Response = self._send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 167, in _send_command
+    raw_response, processed_response = self.channel.send_input(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending input to device
+
+2024-09-10 09:11:27,433 - nornir.core.task -    ERROR -      start() - Host 'router03': task 'rollin_rollin' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_Rollback.py", line 8, in rollin_rollin
+    task.run(task=send_command, command="configure replace flash:eyuel force")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-10 09:11:27,530 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir_scrapli/tasks/core/send_command.py", line 38, in send_command
+    scrapli_response = scrapli_conn.send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/network/sync_driver.py", line 255, in send_command
+    response: Response = super().send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 203, in send_command
+    response: Response = self._send_command(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/driver/generic/sync_driver.py", line 167, in _send_command
+    raw_response, processed_response = self.channel.send_input(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending input to device
+
+2024-09-10 09:11:27,531 - nornir.core.task -    ERROR -      start() - Host 'router04': task 'rollin_rollin' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "runbook_Rollback.py", line 8, in rollin_rollin
+    task.run(task=send_command, command="configure replace flash:eyuel force")
+  File "/home/eyuel/Nornir-Automation/.venv/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2024-09-10 09:12:40,837 -  nornir.core -     INFO -        run() - Running task 'rollin_rollin' with args {} on 4 hosts
